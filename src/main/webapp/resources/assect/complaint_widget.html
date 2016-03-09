@@ -1,0 +1,72 @@
+
+                <section class="col-md-6 connectedSortable" id="graph">
+                            <div class="box">
+                                <div class="box-header">
+                                    <h3 class="box-title">Complaint List</h3>
+                                    <div class="box-tools pull-right">
+                                        
+                                        <button class="btn bg-teal btn-sm close_btn" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <div class="box-body table-responsive">
+                                    <table id="example1" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Class Name</th>
+                                                <th>Batch Name</th>
+                                                <th>Admission No</th>
+                                                <th>Student Name</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Class 1</td>
+                                                <td>Batch-2004</td>
+                                                <td>ADM NO-20</td>
+                                                <td>Raja</td>
+                                                <td>Active</td>
+                                            </tr>
+                                           <tr>
+                                                <td>Class 2</td>
+                                                <td>Batch-2005</td>
+                                                <td>ADM NO-22</td>
+                                                <td>Raja ravi</td>
+                                                <td>Active</td>
+                                            </tr>
+                                           <tr>
+                                                <td>Class 3</td>
+                                                <td>Batch-2004</td>
+                                                <td>ADM NO-25</td>
+                                                <td>Ravi</td>
+                                                <td>Active</td>
+                                            </tr>
+                                           <tr>
+                                                <td>Class 2</td>
+                                                <td>Batch-2004</td>
+                                                <td>ADM NO-32</td>
+                                                <td>Kumar</td>
+                                                <td>Active</td>
+                                            </tr>
+                                           <tr>
+                                                
+                                                <td>Class 5</td>
+                                                <td>Batch-2006</td>
+                                                <td>ADM NO-28</td>
+                                                <td>Raj kumar</td>
+                                                <td>Active</td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                        
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div>
+                </section>
+<script>
+	    $(document).ready(function(){
+		$(".close_btn").click(function(){
+		    $(this).parent().parent().parent().parent().hide();
+		    });
+		});
+</script>

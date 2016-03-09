@@ -1,0 +1,146 @@
+        <script type="text/javascript">
+           $('.chosen-select').chosen();
+        </script>
+                 <section class="content-header">
+                    <h1> Manage Employee Positions </h1>
+		   <ol class="breadcrumb">
+                        <li><a href="home.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="employeedashboard.html"><i class="fa"></i> Employee</a></li>
+                        <li><a href=""><i class="fa"></i> Employee Settings</a></li>
+                        <li class="active">Manage Positions</li>
+                    </ol>
+                </section>
+                <section class="content">
+
+                    <div class="row">
+                        <!-- Left col -->
+                        
+                        <div class="col-md-12 col-xs-12">
+                            <div class="box col-md-12">
+                                <div class="row">
+                                <div class="box-header">
+                                    <h3 class="box-title"> </h3>
+                                   
+                                </div><!-- /.box-header -->
+                                <form role="form col-md-12">
+                                    <div class="form-group col-md-4">
+                                         <label>Name</label>
+                                            <select class="form-control input-md chosen-select">
+                                                <option>Select</option>
+                                                <option>Arun</option>
+                                                <option>Raju</option>
+                                                <option>Soundar</option>
+						<option>Venkat</option>
+                                                <option>Sudhakar</option>
+                                            </select> 
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                         <label>Employee Category</label>
+                                            <select class="form-control input-md chosen-select">
+                                                <option>Select</option>
+                                                <option>Professor</option>
+                                                <option>Lecturer</option>
+                                                <option>Asst. Professor</option>
+                                            </select>   
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        
+                                    </div>
+                                </form> </div></div>
+                            <div class="box col-md-12 col-xs-12">
+                                <div class="box-header">
+                                    <h4 class="box-title">Category </h4>
+                                    <a class="btn bg-olive margin pull-right" data-toggle="modal" data-target="#mposition"><i class="fa fa-pencil"></i> Add Position</a>
+                                </div>
+                                <div class="box-body table-responsive">
+                                    <table id="example1" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Id</th>
+                                                <th> Name</th>
+                                                <th>Employee Category</th>
+                                                <th>Edit</th>
+                                                <th>Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Mohan</td>
+                                                <td>Assistant Professor</td>
+                                                <td>
+                                                    <a class="btn bg-info fa fa-pencil" data-toggle="modal" data-target="#mposition">Edit</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                            </tr>
+                                           <tr>
+                                                <td>2</td>
+                                                <td>John</td>
+                                                <td>Assistant</td>
+                                               <td>
+                                                    <a class="btn bg-info fa fa-pencil" data-toggle="modal" data-target="#mposition">Edit</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                            </tr>
+                                           <tr>
+                                                <td>3</td>
+                                                <td>Moideen</td>
+                                                <td>Lab Assistant</td>
+                                                <td>
+                                                    <a class="btn bg-info fa fa-pencil" data-toggle="modal" data-target="#mposition">Edit</a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                            </tr>
+                                           
+                                           
+                                        </tbody>
+                                        
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        
+                        </div>
+                    </div><!-- /.row (main row) -->
+
+                </section><!-- /.content -->
+
+        <!-- add new calendar event modal -->
+        <div class="modal fade" id="mposition" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"> Add New Position</h4>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="modal-body">
+                            <div class="form-group ">
+                                 <label>Name</label>
+                                 <input class="form-control input-md" type="text">
+                            </div>
+                            <div class="form-group ">
+                                 <label>Employee Category</label>
+                                 <select class="form-control input-md">
+                                    <option>Select</option>
+                                    <option>Admin</option>
+                                    <option>Parent</option>
+                                    <option>Senior Management</option>
+                                    <option>Teacher</option>
+                                  </select>
+                            </div>
+                            
+                        </div>
+                        <div class="modal-footer clearfix">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="submit" class="btn btn-primary pull-left"><i class="fa fa-save"></i> Save</button>
+                        </div>
+                    </form>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->

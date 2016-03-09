@@ -1,0 +1,73 @@
+
+                <section class="col-md-6 connectedSortable" id="graph>
+
+                            <div class="box box-warning">
+                                <div class="box-header">
+                                    <h3 class="box-title">Applicant List</h3>
+                                    <div class="box-tools pull-right">
+                                        
+                                        <button class="btn bg-teal btn-sm close_btn" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                                <div class="box-body table-responsive">
+                                    <table id="example1" class="table table-bordered table-striped" >
+                                        <thead>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>Applicant No</th>
+                                                <th>Student Name</th>
+                                                <th>Preferred Department</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>20365</td>
+                                                <td>Kannan</td>
+                                                <td>Information Technology</td>
+                                                
+                                            </tr>
+                                           <tr>
+                                                <td>2</td>
+                                                <td>20315</td>
+                                                <td>Raja ravi</td>
+                                                <td>Computer Science</td>
+                                                
+                                            </tr>
+                                           <tr>
+                                                <td>3</td>
+                                                <td>21023</td>
+                                                <td>Ravi</td>
+                                                <td>Fashion Technology</td>
+                                                
+                                            </tr>
+                                           <tr>
+                                                <td>4</td>
+                                                <td>23504</td>
+                                                <td>Kumar</td>
+                                                <td>Information Science</td>
+                                            </tr>
+                                           <tr>
+                                                <td>5</td>
+                                                <td>21456</td>
+                                                <td>Raj kumar</td>
+                                                <td>Multimedia</td>
+                                                
+                                            </tr>
+                                           
+                                        </tbody>
+                                       
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div>
+                
+                </section><!-- /.content -->
+            
+<script>
+	    $(document).ready(function(){
+		$(".close_btn").click(function(){
+		    $(this).parent().parent().parent().parent().hide();
+		    });
+		});
+</script>

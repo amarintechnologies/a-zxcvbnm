@@ -1,0 +1,89 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <link href='drag_calendar/fullcalendar/fullcalendar.css' rel='stylesheet' />
+    <link href='drag_calendar/fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+    <link href='drag_calendar/css.css' rel='stylesheet' />
+    <script src='drag_calendar/jquery/jquery.min.js'></script>
+    <script src='drag_calendar/jquery/jquery-ui.custom.min.js'></script>
+    <script src='drag_calendar/fullcalendar/fullcalendar.js'></script>
+    <script src='drag_calendar/js.js'></script>
+</head>
+
+
+<body>
+<div class="fr-content">
+    <div id="cal-scroll">
+        <div id='calendar'></div>
+    </div>
+    <br>
+
+
+    <table id='external-events'>
+        <tr>
+            <th colspan="8">Boxes</th>
+            <th style="cursor:pointer;" colspan="2" id="forTest">Test</th>
+        </tr>
+
+        <tr>
+            <td name="role" class="role">Box Set 1</td>
+            <td ><div nowrap class="task-box"><div title="1 MD" req-md="1" class="external-event">Box 1.1</div><div class="req-md">1</div></div></td>
+            <td ><div nowrap class="task-box"><div title="3 MD" req-md="3" class="external-event">Box 1.2</div><div class="req-md">3</div></div></td>
+            <td ><div nowrap class="task-box"><div title="6 MD" req-md="6" class="external-event">Box 1.3</div><div class="req-md">6</div></div></td>
+            <td ><div nowrap class="task-box"><div title="4 MD" req-md="4" class="external-event">Box 1.4</div><div class="req-md">4</div></div></td>
+            <td ><div nowrap class="task-box"><div title="8 MD" req-md="8" class="external-event">Box 1.5</div><div class="req-md">8</div></div></td>
+            <td ><div nowrap class="task-box"><div title="5 MD" req-md="5" class="external-event">Box 1.6</div><div class="req-md">5</div></div></td>
+            <td ><div nowrap class="task-box"><div title="11 MD" req-md="11" class="external-event">Box 1.7</div><div class="req-md">11</div></div></td>
+            <td ><div nowrap class="task-box"><div title="6 MD" req-md="6" class="external-event">Box 1.8</div><div class="req-md">6</div></div></td>
+            <td ><div nowrap class="task-box"><div title="9 MD" req-md="9" class="external-event">Box 1.9</div><div class="req-md">9</div></div></td>
+            <td ><div nowrap class="task-box"><div title="2 MD" req-md="2" class="external-event">Box 1.10</div><div class="req-md">2</div></div></td>
+        </tr>
+        <tr>
+            <td name="role" class="role">Box Set 2</td>
+            <td ><div nowrap class="task-box"><div title="1000 MD" req-md="1000" class="external-event">Box 2.1</div><div class="req-md">1000</div></div></td>
+            <td ><div nowrap class="task-box"><div title="5 MD" req-md="5" class="external-event">Box 2.2</div><div class="req-md">5</div></div></td>
+            <td ><div nowrap class="task-box"><div title="3 MD" req-md="3" class="external-event">Box 2.3</div><div class="req-md">3</div></div></td>
+            <td ><div nowrap class="task-box"><div title="4 MD" req-md="4" class="external-event">Box 2.4</div><div class="req-md">4</div></div></td>
+            <td ><div nowrap class="task-box"><div title="11 MD" req-md="11" class="external-event">Box 2.5</div><div class="req-md">11</div></div></td>
+            <td ><div nowrap class="task-box"><div title="4 MD" req-md="4" class="external-event">Box 2.6</div><div class="req-md">4</div></div></td>
+            <td ><div nowrap class="task-box"><div title="11 MD" req-md="11" class="external-event">Box 2.7</div><div class="req-md">11</div></div></td>
+            <td ><div nowrap class="task-box"><div title="7 MD" req-md="7" class="external-event">Box 2.8</div><div class="req-md">7</div></div></td>
+            <td ><div nowrap class="task-box"><div title="8 MD" req-md="8" class="external-event">Box 2.9</div><div class="req-md">8</div></div></td>
+            <td ><div nowrap class="task-box"><div title="12 MD" req-md="12" class="external-event">Box 2.10</div><div class="req-md">12</div></div></td>
+        </tr>
+        <tr>
+            <td name="role" class="role">Box Set 3</td>
+            <td ><div nowrap class="task-box"><div title="2 MD" req-md="2" class="external-event">Box 3.1</div><div class="req-md">2</div></div></td>
+            <td ><div nowrap class="task-box"><div title="8 MD" req-md="8" class="external-event">Box 3.2</div><div class="req-md">8</div></div></td>
+            <td ><div nowrap class="task-box"><div title="10 MD" req-md="10" class="external-event">Box 3.3</div><div class="req-md">10</div></div></td>
+            <td ><div nowrap class="task-box"><div title="11 MD" req-md="11" class="external-event">Box 3.4</div><div class="req-md">11</div></div></td>
+            <td ><div nowrap class="task-box"><div title="19 MD" req-md="19" class="external-event">Box 3.5</div><div class="req-md">19</div></div></td>
+            <td ><div nowrap class="task-box"><div title="3 MD" req-md="3" class="external-event">Box 3.6</div><div class="req-md">3</div></div></td>
+            <td ><div nowrap class="task-box"><div title="4 MD" req-md="4" class="external-event">Box 3.7</div><div class="req-md">4</div></div></td>
+            <td ><div nowrap class="task-box"><div title="14 MD" req-md="14" class="external-event">Box 3.8</div><div class="req-md">14</div></div></td>
+            <td ><div nowrap class="task-box"><div title="5 MD" req-md="5" class="external-event">Box 3.9</div><div class="req-md">5</div></div></td>
+            <td ><div nowrap class="task-box"><div title="11 MD" req-md="11" class="external-event">Box 3.10</div><div class="req-md">11</div></div></td>
+        </tr>
+        <tr>
+            <td name="role" class="role">Box Set 4</td>
+            <td ><div nowrap class="task-box"><div title="11 MD" req-md="11" class="external-event">Box 4.1</div><div class="req-md">11</div></div></td>
+            <td ><div nowrap class="task-box"><div title="12 MD" req-md="12" class="external-event">Box 4.2</div><div class="req-md">12</div></div></td>
+            <td ><div nowrap class="task-box"><div title="13 MD" req-md="13" class="external-event">Box 4.3</div><div class="req-md">13</div></div></td>
+            <td ><div nowrap class="task-box"><div title="14 MD" req-md="14" class="external-event">Box 4.4</div><div class="req-md">14</div></div></td>
+            <td ><div nowrap class="task-box"><div title="15 MD" req-md="15" class="external-event">Box 4.5</div><div class="req-md">15</div></div></td>
+            <td ><div nowrap class="task-box"><div title="16 MD" req-md="16" class="external-event">Box 4.6</div><div class="req-md">16</div></div></td>
+            <td ><div nowrap class="task-box"><div title="17 MD" req-md="17" class="external-event">Box 4.7</div><div class="req-md">17</div></div></td>
+            <td ><div nowrap class="task-box"><div title="18 MD" req-md="18" class="external-event">Box 4.8</div><div class="req-md">18</div></div></td>
+            <td ><div nowrap class="task-box"><div title="19 MD" req-md="19" class="external-event">Box 4.9</div><div class="req-md">19</div></div></td>
+            <td ><div nowrap class="task-box"><div title="20 MD" req-md="20" class="external-event">Box 4.10</div><div class="req-md">20</div></div></td>
+        </tr>
+
+    </table>
+
+    <div id="message"> </div>
+</div>
+</body>
+</html>
+
+

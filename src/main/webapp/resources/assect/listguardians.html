@@ -1,0 +1,219 @@
+            
+                <section class="content-header">
+                    <h1>Guardians List </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="home.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><i class="fa"></i> Student</li>
+                        <li><i class="fa"></i> Manage Guardian</li>
+                        <li class="active">List Guardian</li>
+                    </ol>
+                </section>
+                
+                <!-- Main content -->
+                <section class="content">
+                    <div class="row">
+                        <!-- Left col -->
+                        
+                        <div class="col-md-12 col-xs-12">
+                                <div class="box box-primary">
+                        <div class="box-header">
+                                    <h3 class="box-title"></h3>
+                                   <!-- <a class="add_to_widget" href="#listguardians_widget" ><button class="btn btn-warning btn-sm margin pull-right">Add to Widget</button></a>  -->                                  
+                            <div class="box-body">
+                                  
+                            <form role="form" class="col-md-12 ">
+                                <div class="form-group col-md-4">
+                                    <label>Student ID:</label>
+                                        <select class="form-control input-md chosen-select">
+                                            <option>Select</option>
+                                            <option>ID 001</option>
+                                            <option>ID 002</option>
+                                            <option>ID 003</option>
+                                            <option>ID 004</option>
+                                            <option>ID 005</option>
+                                            <option>ID 006</option>
+                                            <option>ID 007</option>
+                                            <option>ID 008</option>
+                                            <option>ID 009</option>
+                                            <option>ID 010</option>
+                                        </select> 
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label>Contact Type</label>
+                                        <select class="form-control input-md chosen-select">
+                                            <option>Select</option>
+                                            <option>Parents</option>
+                                            <option>Guardian</option>                                                
+                                        </select>
+                                </div>
+                                 <a class="add_to_widget" href="#listguardians_widget" ><button class="btn btn-warning btn-sm margin pull-right">Add to Widget</button></a>                                    
+                            </form>
+                      
+                            </div>
+                        </div>
+                    </div>
+                         
+                              <div class="box col-md-12 col-xs-12">
+                                <div class="box-header">
+                                    <h4 class="box-title">Contact List</h4>
+                                    <a class="btn btn-success pull-right margin_top_2" data-toggle="modal" data-target="#guardian">Add Guardian Details</a>
+                                </div>
+                                
+                                <div class="box-body table-responsive">
+                                    <table id="example1" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Ref.Id</th>
+                                                <th>Contact Type</th>
+                                                <th>Name</th>
+                                                <th>Relationship</th>
+                                                <th>E-Mail Id</th>
+                                                <th>Mobile No</th>
+                                                <th>Edit</th>
+                                                <th>Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                                <td>1</td>
+                                                <td>Parent</td>
+                                                <td>Jothimurugan</td>
+                                                <td>Father</td>
+                                                <td>jothi@mail.com</td>
+                                                <td>5236987410</td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Edit successfully')" class="btn btn-twitter fa fa-pencil" title="Edit"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                           </tr>
+                                           <tr>
+                                                <td>2</td>
+                                                <td>Guardian</td>
+                                                <td>Ram</td>
+                                                <td>uncle</td>
+                                                <td>ram@mail.com</td>
+                                                <td>0147896523</td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Edit successfully')" class="btn btn-twitter fa fa-pencil" title="Edit"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                        
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        
+                        </div>
+                    </div><!-- /.row (main row) -->
+
+                </section><!-- /.content -->
+
+
+<div class="modal fade" id="guardian" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <h4 class="modal-title"> Add/Modify Guardian Details</h4>
+            </div>
+        <form action="#" method="post">
+            <div class=" ">
+                <div class="col-md-12">
+                    <div class="form-group col-md-4">
+                        <label>Student ID </label>
+                        <input class="form-control input-md" type="text" placeholder="Student ID">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Contact Type</label>
+                        <select class="form-control input-md">
+                          <option>Parents</option>
+                          <option>Guardian</option>                                                
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>First Name:</label>
+                        <input class="form-control input-md" type="text" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Last Name:</label>
+                        <input class="form-control input-md" type="text" placeholder="Last Name">
+                    </div>
+                    <div class="form-group col-md-4 ">
+                        <label>Relationship:</label>
+                        <input class="form-control input-md" type="text" placeholder="Relationship">
+                    </div>
+                    <div class="form-group col-md-4 ">
+                        <label>Date of Birth</label>   
+                        <div class="input-group">
+                           <input type="text" class="form-control input-md" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask="">
+                           <div class="input-group-addon">
+                            <i class="fa fa-calendar"></i>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group col-md-4">
+                        <label>Education:</label>
+                        <input class="form-control input-md" type="text" placeholder="Education">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Occupation:</label>
+                        <input class="form-control input-md" type="text" placeholder="Occupation">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Income:</label>
+                        <input class="form-control input-md" type="text" placeholder="Income">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>E-Mail Id:</label>
+                        <input class="form-control input-md" type="text" placeholder="E-Mail">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Country</label>
+                        <select class="form-control input-md">
+                            <option>Select</option>
+                            <option>India</option>
+                            <option>England</option>
+                            <option>America</option>
+                            <option>Japan</option>
+                            <option>Dubai</option>
+                            <option>Pakistan</option>
+                            <option>Bangladesh</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4 ">
+                        <label>Office No-1:</label>
+                        <input class="form-control input-md" type="text" placeholder="Office No-1">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group col-md-4">
+                        <label>Office No-2:</label>
+                        <input class="form-control input-md" type="text" placeholder="Office No-2">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Mobile No:</label>
+                        <input class="form-control input-md" type="text" placeholder="Mobile No">
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Office Address :</label>
+                        <textarea class="form-control input-md" type="text" placeholder="Office Address"></textarea>
+                    </div>
+                </div>
+            </div>
+                    <div class="modal-footer clearfix">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        <button type="submit" class="btn btn-primary pull-left"><i class="fa fa-save"></i> Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script src="js/AdminLTE/custom.js" type="text/javascript"></script>

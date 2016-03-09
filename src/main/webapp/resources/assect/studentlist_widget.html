@@ -1,0 +1,84 @@
+
+                <section class="col-md-6 connectedSortable" id="graph">
+                            <div class="box box-warning">
+                                <div class="box-header">
+                                    <h3 class="box-title">Student List</h3>
+                                    <div class="box-tools pull-right">
+                                        
+                                        <button class="btn bg-teal btn-sm close_btn" data-widget="remove"><i class="fa fa-times"></i></button>
+                                    </div>
+                                </div>
+                               
+                                <div class="box-body table-responsive">
+                                    <table id="example1" class="table table-bordered table-striped" >
+                                        <thead>
+                                            <tr>
+                                                <th>Class Name</th>
+                                                <th>Batch Name</th>
+                                                <th>Admission No</th>
+                                                <th>Student NO</th>
+                                                <th>Student Name</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Class 1</td>
+                                                <td>Batch-2004</td>
+                                                <td>ADM NO-20</td>
+                                                <td>20</td>
+                                                <td>Raja</td>
+                                                
+                                              
+                                            </tr>
+                                           <tr>
+                                                <td>Class 2</td>
+                                                <td>Batch-2005</td>
+                                                <td>ADM NO-22</td>
+                                                <td>22</td>
+                                                <td>Raja ravi</td>
+                                               
+                                                
+                                            </tr>
+                                           <tr>
+                                                <td>Class 3</td>
+                                                <td>Batch-2004</td>
+                                                <td>ADM NO-25</td>
+                                                <td>25</td>
+                                                <td>Ravi</td>
+                                                
+                                                
+                                            </tr>
+                                           <tr>
+                                                <td>Class 2</td>
+                                                <td>Batch-2004</td>
+                                                <td>ADM NO-32</td>
+                                                <td>32</td>
+                                                <td>Kumar</td>
+                                                
+                                                
+                                            </tr>
+                                           <tr>
+                                                <td>Class 5</td>
+                                                <td>Batch-2006</td>
+                                                <td>ADM NO-28</td>
+                                                <td>28</td>
+                                                <td>Raj kumar</td>
+                                                
+                                               
+                                            </tr>
+                                           
+                                        </tbody>
+                                       
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div>
+                 
+                </section>
+ <script>
+        $(document).ready(function(){
+            $(".close_btn").click(function(){
+                $(this).parent().parent().parent().parent().hide();
+                });
+            });
+    </script>

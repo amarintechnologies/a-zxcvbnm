@@ -1,0 +1,154 @@
+        <script type="text/javascript">
+           $('.chosen-select').chosen();
+        </script> 
+            
+                <section class="content-header">
+                    <h1> Employee Leave Types</h1>
+                    <ol class="breadcrumb">
+                        <li><a href="home.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href=""><i class="fa"></i> Employee</a></li>
+                        <li><a href=""><i class="fa"></i> Leave Management</a></li>
+                        <li class="active">Add Leave Type</li>
+                    </ol>
+                </section>
+                
+                <section class="content">
+
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12">
+                            <div class="box col-md-12 col-xs-12">
+                                <div class="box-header">
+                                    <h3 class="box-title"> Add New Leave Type</h3>
+                                </div><!-- /.box-header -->
+                                
+                                <form role="form" class="col-md-12 ">
+                                    <div class="form-group col-md-4">
+                                        <label>Name</label>
+                                            <select class="form-control input-md chosen-select">
+                                                <option>Select</option>
+                                                <option>Accidental Leave</option>
+                                                <option>Sick Leave</option>
+                                                <option>Paid Leaves</option>
+                                                <option>Paternal Leave</option>
+                                                <option>Religious Holiday</option>
+                                                <option>Maternity Leave</option>
+                                            </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Code</label>
+                                        <input class="form-control input-md" type="text">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Max Leave Count</label>
+                                        <input class="form-control input-md" type="text">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label>Status</label> </br> 
+                                        <input type="radio" name="r1" class="minimal" checked/>
+                                        Active
+                                        <input type="radio" name="r1" class="minimal"/>
+                                        Inactive
+                                    </div>
+                                    <a href="#" onclick="alert('Create Successfully?')"><button class="btn bg-olive margin pull-right">Create</button></a>
+                                </form>
+                            </div>
+                        <div class="box col-md-12 col-xs-12">
+                            <div class="box-header">
+                                    <h3 class="box-title">  </h3>
+                                     
+                                </div>
+                                <div class="box-body table-responsive">
+                                    <table id="example1" class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Ref.Id</th>
+                                                <th>Leave Type</th>
+                                                <th>Status</th>
+                                                <th>Last Updated Date</th>
+                                                <th>Edit</th>
+                                                <th>Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Sick Leave</td>
+                                                <td>Active</td>
+                                                <td>10-Jan-2015 12:22</td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Edit successfully')" class="btn btn-twitter fa fa-pencil" title="Edit"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Accidental Leave</td>
+                                                <td>Active</td>
+                                                <td>12-Jan-2015 12:22</td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Edit successfully')" class="btn btn-twitter fa fa-pencil" title="Edit"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Paid Leaves</td>
+                                                <td>Active</td>
+                                                <td>19-Jan-2015 12:22</td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Edit successfully')" class="btn btn-twitter fa fa-pencil" title="Edit"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Test</td>
+                                                <td>Active</td>
+                                                <td>10-Dec-2015 12:22</td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Edit successfully')" class="btn btn-twitter fa fa-pencil" title="Edit"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Paternal Leave</td>
+                                                <td>Active</td>
+                                                <td>10-Jan-2014 12:22</td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Edit successfully')" class="btn btn-twitter fa fa-pencil" title="Edit"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Religious Holiday</td>
+                                                <td>Active</td>
+                                                <td>10-Jan-2014 12:22</td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Edit successfully')" class="btn btn-twitter fa fa-pencil" title="Edit"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Remove successfully')" class="btn btn-google-plus fa fa-trash" title="Remove"></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        
+                        </div>
+                    </div><!-- /.row (main row) -->
+
+                </section>

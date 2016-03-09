@@ -1,0 +1,323 @@
+
+                <section class="content-header">
+                    <h1> Add New Batches </h1>
+		   <ol class="breadcrumb">
+                        <li><a href="home.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="examdashboard.html"><i class="fa"></i> Examination</a></li>
+                        <li><a href="#"><i class="fa"></i> Exam Management</a></li>
+                        <li><a href="batchexam.html"><i class="fa"></i> Batch Exam</a></li>
+                        <li class="active"> Add Batch Exam</li>
+                    </ol>
+                </section>
+               
+
+                <!-- Main content -->
+                <section class="content">
+                    <div class="col-md-12">
+    
+                   <div class="box box-warning">
+                                <div class="box-header">
+                                    <h3 class="box-title"></h3>
+                                    <label class="pull-right box-tools">Reset <i class="fa fa-retweet"></i></label>
+                                    <label class="pull-right box-tools">Search <i class="fa fa-search"></i></label>
+                                    <br>
+                               <!-- /.box-header -->
+                                <div class="box-body">
+                                    <form role="form" class="col-md-12">
+                                        <div class="box box-success col-md-6">
+                                            <div class="box-header">
+                                                <h3 class="box-title">BATCH EXAM</h3>
+                                            </div>
+                                        
+                                        <div class="box-body col-md-6">
+                                            <div class="form-group ">
+                                                    <label>Class Name</label>
+                                                    <select class="form-control input-md">
+                                                        <option>Select</option>
+                                                        <option>Class 001</option>
+                                                        <option>Class 002</option>
+                                                        <option>Class 003</option>
+                                                        <option>Class 004</option>
+                                                        <option>Class 005</option>
+                                                    </select>
+                                            </div>
+                                            <div class="form-group ">
+                                                    <label>Batch Name</label>
+                                                    <select class="form-control input-md">
+                                                        <option>Select</option>
+                                                        <option>Batch 2011</option>
+                                                        <option>Batch 2012</option>
+                                                        <option>Batch 2013</option>
+                                                        <option>Batch 2014</option>
+                                                        <option>Batch 2015</option>
+                                                    </select>
+                                            </div>
+                                            <div class="form-group ">
+                                                    <label>Status</label>
+                                                    <select class="form-control input-md">
+                                                        <option>Select</option>
+                                                        <option>Active</option>
+                                                        <option>Inactive</option>
+                                                    </select>
+                                                </div>
+                                        </div><!-- /.box-body -->
+                                        <div class="box-body col-md-6">
+                                                <div class="form-group ">
+                                                    <label>Exam Name:</label>
+                                                    <input class="form-control input-md" type="text" placeholder="exam name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Start and End Date:</label>
+                                                    <div class="input-group">
+                                                        <div class="input-group-addon">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </div>
+                                                        <input type="text" class="form-control pull-right" id="reservation"/>
+                                                    </div><!-- /.input group -->
+                                                </div>
+                                        </div>
+                                        
+                                        </div>
+                                        
+                                    <div class="box box-success col-md-12">
+                                        <div class="box-header">
+                                            <h3 class="box-title">SUBJECTS</h3>
+                                            <a class="btn bg-olive margin" data-toggle="modal" data-target="#subject" style="float: right"><i class="fa fa-pencil"></i> Add Subject </a>
+                                        </div>
+                                        <table class="table table-bordered ">
+                                        <thead>
+                                            <tr>
+                                                <th>Ref.Id</th>
+                                                <th>Subject Name</th>
+                                                <th>Exam Date</th>
+                                                <th>Start Time</th>
+                                                <th>End Time</th>
+                                                <th>Updated By</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Computer Science</td>
+                                                <td>30.01.2015</td>
+                                                <td>10:00</td>
+                                                <td>13:00</td>
+                                                <td>superuser</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                        
+                                    <div class="box box-success col-md-12">
+                                            <div class="box-header">
+                                                <h3 class="box-title">STUDENT</h3>
+                                                <a class="btn bg-olive margin" data-toggle="modal" data-target="#student" style="float: right"><i class="fa fa-pencil"></i> Add Student </a>
+                                            </div>
+                                        <table class="table table-bordered ">
+                                        <thead>
+                                            <tr>
+                                                <th>Ref.Id</th>
+                                                <th>Department</th>
+                                                <th>Staff Name</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Computer Science</td>
+                                                <td>Abu</td>
+                                                <td>active</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                    </form>
+                                    </div>
+                                </div><!-- /.box-body -->
+                          
+         </div>
+                </section><!-- /.content -->
+
+                
+<div class="modal fade" id="subject" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"> Add Subject </h4>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="modal-body">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Subject:</label>
+                                    <select class="form-control input-md">
+                                        <option>Select</option>
+                                        <option>Computer Science</option>
+                                        <option>Tamil</option>
+                                        <option>Arabic</option>
+                                        <option>History</option>
+                                        <option>German</option>
+                                        <option>Maths</option>
+                                    </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Exam Date </label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control input-sm" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask="">
+                                        <div class="input-group-addon">
+                                           <i class="fa fa-calendar"></i>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="bootstrap-timepicker">
+                                
+                                <div class="form-group">
+                                    <label>Start Time</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control timepicker"/>
+                                        <div class="input-group-addon">
+                                        <i class="fa fa-clock-o"></i>
+                                        </div>
+                                    </div><!-- /.input group -->
+                                </div><!-- /.form group -->
+                            </div>
+                            <div class="bootstrap-timepicker">
+                                <div class="form-group">
+                                    <label>End Time</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control timepicker"/>
+                                        <div class="input-group-addon">
+                                        <i class="fa fa-clock-o"></i>
+                                        </div>
+                                    </div><!-- /.input group -->
+                                </div><!-- /.form group -->
+                            </div>
+                        </div>
+                        
+                        <div class="modal-footer clearfix">
+                            <button type="button" class="btn btn-danger"  data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
+                        </div>
+                        </div>
+                    </form>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+<div class="modal fade" id="student" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"> Staff Allocation </h4>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="modal-body">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Department:</label>
+                                    <select class="form-control input-md">
+                                        <option>Select</option>
+                                        <option>Computer Science</option>
+                                        <option>Tamil</option>
+                                        <option>Arabic</option>
+                                        <option>History</option>
+                                        <option>German</option>
+                                        <option>Maths</option>
+                                    </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Staff Name:</label>
+                                    <select class="form-control input-md">
+                                        <option>Select</option>
+                                        <option>Saravanan</option>
+                                        <option>Mohan</option>
+                                        <option>Vinoth</option>
+                                        <option>Deepan</option>
+                                        <option>Jai</option>
+                                        <option>Siva</option>
+                                    </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Subject:</label>
+                                    <select class="form-control input-md">
+                                        <option>Select</option>
+                                        <option>Computer Science</option>
+                                        <option>Tamil</option>
+                                        <option>Arabic</option>
+                                        <option>History</option>
+                                        <option>German</option>
+                                        <option>Maths</option>
+                                    </select>
+                            </div>
+                        </div>
+                        <div class="modal-footer clearfix">
+                            <button type="button" class="btn btn-danger"  data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
+                        </div>
+                        </div>
+                    </form>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        
+<div class="modal fade" id="internal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"> Add Internal Exam  </h4>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="modal-body">
+                        <div class="col-md-12">
+                            <div class="form-group ">
+                                 <label>Internal Name:</label>
+                                 <input class="form-control input-lg" type="text" placeholder="">
+                            </div>
+                            <div class="form-group ">
+                                 <label>Max.Score:</label>
+                                 <input class="form-control input-lg" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="modal-footer clearfix">
+                            <button type="button" class="btn btn-danger"  data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
+                        </div>
+                        </div>
+                    </form>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+<div class="modal fade" id="quiz" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"> Add Quiz Event </h4>
+                    </div>
+                    <form action="#" method="post">
+                        <div class="modal-body">
+                        <div class="col-md-12">
+                            <div class="form-group ">
+                                 <label>Quiz Name:</label>
+                                 <input class="form-control input-lg" type="text" placeholder="">
+                            </div>
+                            <div class="form-group ">
+                                 <label>Max.Score:</label>
+                                 <input class="form-control input-lg" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="modal-footer clearfix">
+                            <button type="button" class="btn btn-danger"  data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
+                        </div>
+                        </div>
+                    </form>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->     
+
