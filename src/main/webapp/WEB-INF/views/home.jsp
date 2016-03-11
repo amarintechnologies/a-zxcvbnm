@@ -20,7 +20,7 @@
 
         <div class="form-box" id="login-box" style="margin: 10% auto;">
             <div class="header">Sign In</div>
-            <form action="home.html" method="post">
+            <form action="/school/dashboard.jsp" method="post">
                 <div class="body bg-gray">
                     <div class="form-group">
                         <input type="text" name="userid" class="form-control" placeholder="User ID"/>
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <button type="submit" class="btn bg-olive btn-block">Sign me in</button>
+                    <button type="submit" onclick=signmein(); class="btn bg-olive btn-block">Sign me in</button>
 
                     <p><a href="#">I forgot my password</a></p>
 
@@ -46,6 +46,26 @@
 
         <script src="/school/resources/assect/drag_calendar/fullcalendar-2.3.0/lib/jquery.min.js"></script>
         <script src="/school/resources/assect/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        
+        <script type="text/javascript">
+        
+       function signmein(){
+    	   
+    	   alert("test");
+    	   
+    	   $(location).Attr('href','/school/dashbord' );
+    	   
+       }
+        
+        
+        </script>
+        
 
     </body>
 </html>
+
+
+
+
+

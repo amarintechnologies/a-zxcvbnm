@@ -36,4 +36,22 @@ public class HomeController {
 		return "home";
 	}
 	
+	
+	@RequestMapping(value = "/dashboard", method = RequestMethod.GET)
+	public String dashboard(Locale locale, Model model) {
+		logger.info("Welcome Dashboard! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "dashboard";
+	}
+	
+	
+	
+	
 }
