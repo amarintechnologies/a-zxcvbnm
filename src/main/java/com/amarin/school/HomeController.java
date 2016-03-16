@@ -56,11 +56,47 @@ public class HomeController {
 	@RequestMapping(value = "/addstudent", method = RequestMethod.GET)
 	public ModelAndView addstudent() {
 		
-		System.out.println("test----test--333-->");
-
-		ModelAndView model = new ModelAndView();
-		 
+		ModelAndView model = new ModelAndView();		 
 		model.setViewName("addstudent");
+		return model;
+	}
+	
+	@RequestMapping(value = "/applicantlist", method = RequestMethod.GET)
+	public ModelAndView applicantlist() {	 
+
+		ModelAndView model = new ModelAndView();		 
+		model.setViewName("applicantlist");
+		return model;
+	}
+	
+	
+	@RequestMapping(value = "/studentlist", method = RequestMethod.GET)
+	public ModelAndView studentlist() {	 
+
+		ModelAndView model = new ModelAndView();		 
+		model.setViewName("studentlist");
+		return model;
+	}
+	
+	@RequestMapping(value = "/studentcategory", method = RequestMethod.GET)
+	public ModelAndView studentcategory() {	 
+
+		ModelAndView model = new ModelAndView();		 
+		model.setViewName("studentcategory");
+		return model;
+	}
+	
+	@RequestMapping(value = "/listguardians", method = RequestMethod.GET)
+	public ModelAndView listguardians() {	 
+		ModelAndView model = new ModelAndView();		 
+		model.setViewName("listguardians");
+		return model;
+	}
+	
+	@RequestMapping(value = "/complaint", method = RequestMethod.GET)
+	public ModelAndView complaint() {	 
+		ModelAndView model = new ModelAndView();		 
+		model.setViewName("complaint");
 		return model;
 	}
 	
