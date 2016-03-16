@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Handles requests for the application home page.
@@ -50,8 +51,18 @@ public class HomeController {
 		
 		return "dashboard";
 	}
+		
 	
-	
+	@RequestMapping(value = "/addstudent", method = RequestMethod.GET)
+	public ModelAndView addstudent() {
+		
+		System.out.println("test----test--333-->");
+
+		ModelAndView model = new ModelAndView();
+		 
+		model.setViewName("addstudent");
+		return model;
+	}
 	
 	
 }

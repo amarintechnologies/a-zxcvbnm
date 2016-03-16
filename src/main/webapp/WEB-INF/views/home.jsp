@@ -20,7 +20,7 @@
 
         <div class="form-box" id="login-box" style="margin: 10% auto;">
             <div class="header">Sign In</div>
-            <form action="/school/dashboard.jsp" method="post">
+         <!--    <form  method="post"> -->
                 <div class="body bg-gray">
                     <div class="form-group">
                         <input type="text" name="userid" class="form-control" placeholder="User ID"/>
@@ -39,7 +39,7 @@
 
                     <a href="register.html" class="text-center">Register a new membership</a>
                 </div>
-            </form>
+           <!--  </form> -->
 
            
         </div>
@@ -50,14 +50,31 @@
         
         <script type="text/javascript">
         
-       function signmein(){
+       function signmein(){    	   
     	   
-    	   alert("test");
+    	   alert('test--1');
     	   
-    	   $(location).Attr('href','/school/dashbord' );
-    	   
+    		$(location).attr('href', '/school/dashboard');
+
+	/* 		$.ajax({
+				type : 'POST',
+				url : "/gretail/getadminsignin",
+				data : {
+
+				 
+
+				},
+				success : function(result) {
+
+					if (result == 'success') {
+						$(location).attr('href', '/gretail/home');
+
+					} 
+				}
+
+			}); */
        }
-        
+         
         
         </script>
         

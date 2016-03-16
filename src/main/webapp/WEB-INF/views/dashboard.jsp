@@ -7,7 +7,7 @@
         <link href="/school/resources/assect/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="/school/resources/assect/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
-        <link href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/school/resources/assect/css/ionicons.min.css" rel="stylesheet" type="text/css" />
         <!-- Morris chart -->
         <link href="/school/resources/assect/css/morris/morris.css" rel="stylesheet" type="text/css" />
         <!-- jvectormap -->
@@ -33,15 +33,16 @@
         <script src="/school/resources/assect/js/AdminLTE/custom.js" type="text/javascript"></script>
         <script src="/school/resources/assect/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="/school/resources/assect/js/jquery.bootstrap.wizard.js"></script>
-        <script src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="/school/resources/assect/ajax/jquery-ui.min.js" type="text/javascript"></script>
         <!-- Morris.js charts -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="/school/resources/assect/ajax/raphael-min.js"></script>
        
         <!-- Sparkline -->
         <script src="/school/resources/assect/js/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
         <!-- jvectormap -->
         <script src="/school/resources/assect/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
-        <script src="/school/src/main/webapp/resources/assect/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+        <script src="/school/resources/assect/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+                
         <!-- jQuery Knob Chart -->
         <script src="/school/resources/assect/js/plugins/jqueryKnob/jquery.knob.js" type="text/javascript"></script>
         <!-- daterangepicker -->
@@ -57,6 +58,8 @@
         <script src="/school/resources/assect/js/AdminLTE/app.js" type="text/javascript"></script>
         <!-- search combo -->
         <script src="/school/resources/assect/js/plugins/chosen_v1.3.0/chosen.jquery.js" type="text/javascript"></script>
+        
+     
         <script type="text/javascript">
            $('.chosen-select').chosen();
         </script>
@@ -66,7 +69,7 @@
 	    $(".haslink").click(function(){
 	        url=$(this).attr("href").substring(1);
 	       //alert(url);
-	        load_page(url+".html",swap_wrap);
+	        load_page(url+".jsp",swap_wrap);
 	       
 	        });
    });
@@ -104,7 +107,7 @@
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="img/avatar5.png" class="img-circle" alt="User Image" />
+                                    <img src="/school/resources/assect/img/avatar2.png" class="img-circle" alt="User Image" />
                                     <p>
                                         admin - Super user
                                         <small>Member since Jan. 2015</small>
@@ -143,7 +146,7 @@
                     <!-- Sidebar user panel -->
                     <div class="user-panel">
                         <div class="pull-left image">
-                            <img src="img/avatar5.png" class="img-circle" alt="User Image" />
+                            <img src="/school/resources/assect/img/avatar5.png" class="img-circle" alt="User Image" />
                         </div>
                         <div class="pull-left info">
                             <p>Hello, Admin</p>
@@ -178,7 +181,7 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                                 </a>
                                     <ul class="treeview-menu">
-                                        <li><a class="haslink" href="#addstudent"><i class="fa fa-angle-double-right"></i>Create New Student</a></li>
+                                        <li><a class="haslink" href="#addstudent" onclick="addstudentclk();"><i class="fa fa-angle-double-right"></i>Create New Student</a></li>
                                         <li><a class="haslink" href="#applicantlist"><i class="fa fa-angle-double-right"></i>Applicant List</a></li>
                                         <li><a class="haslink" href="#studentlist"><i class="fa fa-angle-double-right"></i> Student List</a></li>
                                         <li><a class="haslink" href="#studentcategory"><i class="fa fa-angle-double-right"></i> Manage Student Category</a></li>
@@ -810,7 +813,7 @@
                                 <div class="tab-content no-padding">
                                     
                                     <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;">
-                                         <img src="img/chart.jpg">
+                                         <img src="/school/resources/assect/img/chart.jpg">
                                     </div>
                                     <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;">
                                         
@@ -895,7 +898,7 @@
                                 </div>
                                 <div class="box-body">
                                     <div id="world-map" style="position: relative; height: 300px;">
-                                        <img src="img/map.jpg">
+                                        <img src="/school/resources/assect/img/map.jpg">
                                     </div>
                                 </div><!-- /.box-body-->
                                 
@@ -939,6 +942,29 @@
         
 	</div>
 
+
+<script type="text/javascript">
+        
+       function addstudentclk(){    	   
+    	   
+    	   alert('test--1');
+    	   
+   		$.ajax({
+			type : 'GET',
+			url : "/school/addstudent",
+			data : {
+
+			},
+			success : function(result) {
+				$("#swap_wrap").html(result);
+
+			}
+
+		});
+       }
+         
+        
+        </script>
         
       
     </body>
