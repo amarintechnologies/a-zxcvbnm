@@ -182,9 +182,9 @@
                                 </a>
                                     <ul class="treeview-menu">
                                         <li><a class="haslink" href="#addstudent" onclick="addstudentclk();"><i class="fa fa-angle-double-right"></i>Create New Student</a></li>
-                                        <li><a class="haslink" href="#applicantlist"><i class="fa fa-angle-double-right"></i>Applicant List</a></li>
-                                        <li><a class="haslink" href="#studentlist"><i class="fa fa-angle-double-right"></i> Student List</a></li>
-                                        <li><a class="haslink" href="#studentcategory"><i class="fa fa-angle-double-right"></i> Manage Student Category</a></li>
+                                        <li><a class="haslink" href="#applicantlist" onclick="applicantlistclk();"><i class="fa fa-angle-double-right"></i>Applicant List</a></li>
+                                        <li><a class="haslink" href="#studentlist" onclick="studentlistclk();"  ><i class="fa fa-angle-double-right"></i> Student List</a></li>
+                                        <li><a class="haslink" href="#studentcategory" onclick="mngstudctgclk();"><i class="fa fa-angle-double-right"></i> Manage Student Category</a></li>
                                         
                                     </ul>
                                 </li>
@@ -195,12 +195,12 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                                 </a>
                                     <ul class="treeview-menu">
-                                     <li><a class="haslink" href="#listguardians"><i class="fa fa-angle-double-right"></i> List Guardians</a></li>   
+                                     <li><a class="haslink" href="#listguardians" onclick="listgurdclk();"><i class="fa fa-angle-double-right"></i> List Guardians</a></li>   
                                         
                                         
                                     </ul>
                                 </li>
-                                <li class=""><a class="haslink" href="#complaint">Complaint</a></li>
+                                <li class=""><a class="haslink" href="#complaint" onclick="complaintclk();">Complaint</a></li>
                             </ul>
                         </li>
     <!-- Employee Starts-->                                              
@@ -962,6 +962,105 @@
 
 		});
        }
+         
+       
+       
+       
+       function applicantlistclk(){    	   
+    	   
+    	   alert('test--1');
+    	   
+   		$.ajax({
+			type : 'GET',
+			url : "/school/applicantlist",
+			data : {
+
+			},
+			success : function(result) {
+				$("#swap_wrap").html(result);
+
+			}
+
+		});
+       }
+       
+       
+       
+       
+       function studentlistclk(){    	   
+    	   
+    	   alert('test--1');
+    	   
+   		$.ajax({
+			type : 'GET',
+			url : "/school/studentlist",
+			data : {
+
+			},
+			success : function(result) {
+				$("#swap_wrap").html(result);
+
+			}
+
+		});
+       }
+                    
+       
+       function mngstudctgclk(){    	   
+    	   
+    	   alert('test--1');
+    	   
+   		$.ajax({
+			type : 'GET',
+			url : "/school/studentcategory",
+			data : {
+
+			},
+			success : function(result) {
+				$("#swap_wrap").html(result);
+
+			}
+
+		});
+       }
+       
+function listgurdclk(){    	   
+    	   
+    	   alert('test--1');
+    	   
+   		$.ajax({
+			type : 'GET',
+			url : "/school/listguardians",
+			data : {
+
+			},
+			success : function(result) {
+				$("#swap_wrap").html(result);
+
+			}
+
+		});
+       }
+       
+       
+function complaintclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/complaint",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+       
          
         
         </script>
