@@ -1,0 +1,189 @@
+
+                <section class="content-header">
+                    <h1>
+                       Settings
+                        <small>Control panel</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Settings</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+                <section class="content">
+                    
+                    <div class="box">
+                                <div class="box-header dashgrid_parent">
+                                    <h3 class="box-title dashgrid_title">General Setting</h3>
+                                </div>
+                                <div class="box-body">
+                                    <a href="school.html" class="btn btn-app dashgrid_child faa-parent animated-hover">
+                                        <i class="fa fa-bank faa-ring"></i> School Setup
+                                    </a>
+                                    <a href="#" class="btn btn-app dashgrid_child faa-parent animated-hover">
+                                        <i class="fa fa-newspaper-o faa-ring"></i> News and Events 
+                                    </a>
+                                    <a href="buildingandrooms.html" class="btn btn-app dashgrid_child faa-parent animated-hover">
+                                        <i class="fa fa-building faa-ring"></i> Hostel Building and rooms
+
+                                    </a>
+                                   
+                                </div><!-- /.box-body -->
+                                
+                                <div class="box-footer">
+                                    
+                                </div>
+                                
+                                
+                                <div class="box-header">
+                                    <h3 class="box-title dashgrid_title">Location Setup </h3>
+                                </div>
+                                <div class="box-body">
+                                    <a href="country.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa  fa-globe faa-ring"></i> Country 
+                                    </a>
+                                    <a href="region.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-sitemap faa-ring"></i> Region
+
+                                    </a>
+                                    <a href="state.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-location-arrow faa-ring"></i> State
+
+                                    </a>
+                                    <a href="city.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-map-marker faa-ring"></i>City
+
+                                    </a>
+                                    <a href="currency.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-usd faa-ring"></i> Currency
+
+                                    </a>
+                                </div><!-- /.box-body -->
+                                <div class="box-footer">
+                                    
+                                </div>
+                                                                
+                                <div class="box-header">
+                                    <h3 class="box-title dashgrid_title">Course/Batch Settings  </h3>
+                                </div>
+                                <div class="box-body">
+                                    <a href="class.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-language faa-ring"></i> Manage Courses  
+                                    </a>
+                                    <a href="subject.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-book faa-ring"></i> Manage subject
+
+                                    </a>
+                                    <a href="batchgroup.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-archive faa-ring"></i> Subject Batch Association 
+
+                                    </a>
+                                    <a href="#" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-star faa-ring"></i>  Holidays
+
+
+                                    </a>
+                                   
+                                   
+                                </div><!-- /.box-body -->
+                                <div class="box-footer">
+                                    
+                                </div>
+                                <div class="box-header">
+                                    <h3 class="box-title dashgrid_title">Enrollment Settings   </h3>
+                                </div>
+                                <div class="box-body">
+                                    <a href="studentcategory.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-support faa-ring"></i> Manage Category
+  
+                                    </a>
+                                    <a href="class.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-slideshare faa-ring"></i> Classes
+
+
+
+                                    </a>
+                                    <a href="gradename.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-sort-alpha-asc faa-ring"></i> Grade Name
+ 
+
+                                    </a>
+                                    <a href="gradesection.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-arrows faa-ring"></i> Grade Section
+
+
+                                    </a>
+                                   
+                                   
+                                </div><!-- /.box-body -->
+                                <div class="box-footer">
+                                    
+                                </div>
+                                
+                                
+                                <div class="box-header">
+                                    <h3 class="box-title dashgrid_title">System setting  </h3>
+                                </div>
+                                <div class="box-body">
+                                    <a href="#" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-cogs faa-ring"></i> System Parameter
+
+  
+                                    </a>
+                                    <a href="#" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-bookmark-o faa-ring"></i> Custom Fields
+
+
+
+
+                                    </a>
+                                    <a href="logger.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-archive faa-ring"></i> Logger
+
+ 
+
+                                    </a>
+                                    <a href="diseases.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-ban faa-ring"></i> Decease
+
+
+
+                                    </a>
+                                   
+                                   
+                                </div><!-- /.box-body -->
+                                <div class="box-footer">
+                                    
+                                </div>
+                                
+                                
+                                <div class="box-header">
+                                    <h3 class="box-title dashgrid_title">User Management   </h3>
+                                </div>
+                                <div class="box-body">
+                                    <a href="userslist.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-user faa-ring"></i> Users 
+
+  
+                                    </a>
+                                    <a href="managerole.html" class="btn btn-app faa-parent animated-hover">
+                                        <i class="fa fa-slideshare faa-ring "></i> Roles
+
+
+
+
+                                    </a>
+                                                                      
+                                </div><!-- /.box-body -->
+                                <div class="box-footer">
+                                    
+                                </div>
+                                
+                            </div>
+                    
+                    
+
+                
+                
+          </section><!-- /.content -->

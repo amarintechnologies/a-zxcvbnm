@@ -230,7 +230,7 @@
      <i class="fa fa-angle-left pull-right"></i>
      </a>
         <ul class="treeview-menu">
-           <li><a class="haslink" href="#attendanceregister"><i class="fa fa-angle-double-right"></i>Attendance Register</a></li>
+           <li><a class="haslink" href="#attendanceregister" onclick=""><i class="fa fa-angle-double-right"></i>Attendance Register</a></li>
         </ul>
      </li>
      <li class="treeview"><a href="#">
@@ -267,7 +267,7 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#setup"><i class="fa fa-angle-double-right"></i> General Settings</a></li>
+                <li><a class="haslink" href="#setup" onclick="generalsettingsclk();"><i class="fa fa-angle-double-right"></i> General Settings</a></li>
             </ul>
         </li>
         <li class="treeview"><a href="#">
@@ -276,9 +276,9 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#class"><i class="fa fa-angle-double-right"></i> Class</a></li>
-                <li><a class="haslink" href="#subject"><i class="fa fa-angle-double-right"></i> Subject</a></li>        
-                <li><a class="haslink" href="#gradesection"><i class="fa fa-angle-double-right"></i> Grade Section</a></li>
+                <li><a class="haslink" href="#class" onclick="classclk();" ><i class="fa fa-angle-double-right"></i> Class</a></li>
+                <li><a class="haslink" href="#subject" onclick="subjectclk();"><i class="fa fa-angle-double-right"></i> Subject</a></li>        
+                <li><a class="haslink" href="#gradesection" onclick="gradesectionclk();"><i class="fa fa-angle-double-right"></i> Grade Section</a></li>
             </ul>
         </li>
         
@@ -288,8 +288,8 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#batches"><i class="fa fa-angle-double-right"></i> Batches</a></li>
-                <li><a class="haslink" href="#batchgroup"><i class="fa fa-angle-double-right"></i> Batch Group</a></li>          
+                <li><a class="haslink" href="#batches" onclick="batchclk();"><i class="fa fa-angle-double-right"></i> Batches</a></li>
+                <li><a class="haslink" href="#batchgroup" onclick="batchgroupclk();"><i class="fa fa-angle-double-right"></i> Batch Group</a></li>          
             </ul>
         </li>
     </ul>
@@ -311,8 +311,8 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#batchexam"><i class="fa fa-angle-double-right"></i> Batch Exam</a></li>
-                <li><a class="haslink" href="#batchinternalscore"><i class="fa fa-angle-double-right"></i> Batch Internal Score</a></li>
+                <li><a class="haslink" href="#batchexam" onclick="batchexamclk();"><i class="fa fa-angle-double-right"></i> Batch Exam</a></li>
+                <li><a class="haslink" href="#batchinternalscore" onclick="batchinternalscoreclk();"><i class="fa fa-angle-double-right"></i> Batch Internal Score</a></li>
             </ul>
         </li>
         <li class="treeview"><a href="#">
@@ -321,7 +321,7 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#gradename"><i class="fa fa-angle-double-right"></i> Grade Name</a></li>
+                <li><a class="haslink" href="#gradename" onclick="gradenameclk();"><i class="fa fa-angle-double-right" onclick="gradenameclk();"></i> Grade Name</a></li>
             </ul>
         </li>
     </ul>
@@ -338,8 +338,8 @@
 	<i class="fa fa-angle-left pull-right"></i>
     </a>
     <ul class="treeview-menu">
-	<li><a class="haslink" href="#studentattendance"><i class="fa fa-angle-double-right"></i> Student Attendance</a></li>
-	<li><a class="haslink" href="#attendanceregister"><i class="fa fa-angle-double-right"></i> Employee Attendance</a></li>
+	<li><a class="haslink" href="#studentattendance" onclick="studentattendanceclk();"><i class="fa fa-angle-double-right"></i> Student Attendance</a></li>
+	<li><a class="haslink" href="#attendanceregister" onclick="attendanceregister();" ><i class="fa fa-angle-double-right"></i> Employee Attendance</a></li>
     </ul>
 </li>
                         
@@ -349,7 +349,7 @@
                         
                         <li class=" treeview">
                             <a href="timetabledashboard.html">
-                                <i class="fa fa-calendar"></i>
+                                <i class="fa fa-calendar" ></i>
                                 <span>Timetable</span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
@@ -360,7 +360,7 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                                 </a>
                                     <ul class="treeview-menu">
-                                        <li><a class="haslink" href="#viewfulltimetable"><i class="fa fa-angle-double-right"></i> View Full Timetable</a></li>
+                                        <li><a class="haslink" href="#viewfulltimetable" onclick="viewfulltimetableclk();"><i class="fa fa-angle-double-right"></i> View Full Timetable</a></li>
                                     </ul>
                                 </li>
                                 <li class="treeview"><a href="#">
@@ -368,8 +368,8 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                                 </a>
                                     <ul class="treeview-menu">
-                                        <li><a class="haslink" href="#setclasstiming"><i class="fa fa-angle-double-right"></i> Set Class Timing</a></li>
-                                        <li><a class="haslink" href="#settimetable"><i class="fa fa-angle-double-right"></i> Set Timetable</a></li>
+                                        <li><a class="haslink" href="#setclasstiming" onclick="setclasstimingclk();"><i class="fa fa-angle-double-right"></i> Set Class Timing</a></li>
+                                        <li><a class="haslink" href="#settimetable" onclick="settimetableclk();"><i class="fa fa-angle-double-right"></i> Set Timetable</a></li>
                                     </ul>
                                 </li>
                                 
@@ -394,10 +394,10 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#fees"><i class="fa fa-angle-double-right"></i> Fees</a></li>
-                <li><a class="haslink" href="#collectfees"><i class="fa fa-angle-double-right"></i> Collect Fees</a></li>
-                <li><a class="haslink" href="#paid"><i class="fa fa-angle-double-right"></i> Paid</a></li>
-                <li><a class="haslink" href="#unpaid"><i class="fa fa-angle-double-right"></i> Unpaid</a></li>
+                <li><a class="haslink" href="#fees" onclick="feesclk();"><i class="fa fa-angle-double-right"></i> Fees</a></li>
+                <li><a class="haslink" href="#collectfees" onclick="collectfeesclk();"><i class="fa fa-angle-double-right"></i> Collect Fees</a></li>
+                <li><a class="haslink" href="#paid" onclick="paidclk();"><i class="fa fa-angle-double-right"></i> Paid</a></li>
+                <li><a class="haslink" href="#unpaid" onclick="unpaidclk();"><i class="fa fa-angle-double-right"></i> Unpaid</a></li>
             </ul>
         </li>
         <li class="treeview"><a href="#">
@@ -408,13 +408,13 @@
             <ul class="treeview-menu">
                 <li class="treeview"><a href="#"><i class="fa fa-angle-double-right"></i> Transport</a>
                 <ul class="treeview-menu">
-                    <li><a class="haslink" href="#feesschedule"><i class="fa fa-angle-double-right"></i> Fees Schedule</a></li>
-                    <li><a class="haslink" href="#feespayment"><i class="fa fa-angle-double-right"></i> Fees Payment</a></li>
+                    <li><a class="haslink" href="#feesschedule" onclick="feesscheduleclk();"><i class="fa fa-angle-double-right"></i> Fees Schedule</a></li>
+                    <li><a class="haslink" href="#feespayment" onclick="feespaymentclk();"><i class="fa fa-angle-double-right"></i> Fees Payment</a></li>
                 </ul> </li>   
                 <li class="treeview"><a href="#"><i class="fa fa-angle-double-right"></i> Hostel</a>
                 <ul class="treeview-menu">
-                    <li><a class="haslink" href="#hostelfeesschedule"><i class="fa fa-angle-double-right"></i> Fees Schedule</a></li>
-                    <li><a class="haslink" href="#hostelfeespayment"><i class="fa fa-angle-double-right"></i> Fees Payment</a></li>
+                    <li><a class="haslink" href="#hostelfeesschedule" onclick="hostelfeesscheduleclk();"><i class="fa fa-angle-double-right"></i> Fees Schedule</a></li>
+                    <li><a class="haslink" href="#hostelfeespayment" onclick="hostelfeespaymentclk();"><i class="fa fa-angle-double-right"></i> Fees Payment</a></li>
                 </ul></li>
             </ul>
         </li>
@@ -441,8 +441,8 @@
          <i class="fa fa-angle-left pull-right"></i>
          </a>
              <ul class="treeview-menu">
-                 <li><a class="haslink" href="#applicant_report"><i class="fa fa-angle-double-right"></i> Applicant Report</a></li>
-                 <li><a class="haslink" href="#student_report"><i class="fa fa-angle-double-right"></i> Student Report</a></li>
+                 <li><a class="haslink" href="#applicant_report" onclick="applicant_reportclk();"><i class="fa fa-angle-double-right"></i> Applicant Report</a></li>
+                 <li><a class="haslink" href="#student_report" onclick="student_reportclk();"><i class="fa fa-angle-double-right"></i> Student Report</a></li>
              </ul>
          </li>
          <li class="treeview"><a href="#">
@@ -451,9 +451,9 @@
          <i class="fa fa-angle-left pull-right"></i>
          </a>
              <ul class="treeview-menu">
-                 <li><a class="haslink" href="#gradesheet"><i class="fa fa-angle-double-right"></i> Grade Sheet</a></li>
-                 <li><a class="haslink" href="#reportcard"><i class="fa fa-angle-double-right"></i> Report Card</a></li>        
-                 <li><a class="haslink" href="#semester_report"><i class="fa fa-angle-double-right"></i> Semester Report</a></li>
+                 <li><a class="haslink" href="#gradesheet" onclick="gradesheetclk();"><i class="fa fa-angle-double-right"></i> Grade Sheet</a></li>
+                 <li><a class="haslink" href="#reportcard" onclick="reportcardclk();"><i class="fa fa-angle-double-right"></i> Report Card</a></li>        
+                 <li><a class="haslink" href="#semester_report" onclick="semester_reportclk();"><i class="fa fa-angle-double-right"></i> Semester Report</a></li>
              </ul>
          </li>
          
@@ -478,8 +478,8 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#listbook"><i class="fa fa-angle-double-right"></i> List Book</a></li>
-                <li><a class="haslink" href="#addbook"><i class="fa fa-angle-double-right"></i> Add Book </a></li>
+                <li><a class="haslink" href="#listbook" onclick="listbookclk();"><i class="fa fa-angle-double-right"></i> List Book</a></li>
+                <li><a class="haslink" href="#addbook" onclick="addbookclk();"><i class="fa fa-angle-double-right"></i> Add Book </a></li>
             </ul>
         </li>
         <li class="treeview"><a href="#">
@@ -488,10 +488,10 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#borrowbook"><i class="fa fa-angle-double-right"></i> Borrow Book</a></li>
-                <li><a class="haslink" href="#returnbook"><i class="fa fa-angle-double-right"></i> Return Book</a></li>        
-                <li><a class="haslink" href="#viewbookdetails"><i class="fa fa-angle-double-right"></i> View Book Details</a></li>
-                <li><a class="haslink" href="#duedates"><i class="fa fa-angle-double-right"></i> Due Dates</a></li>
+                <li><a class="haslink" href="#borrowbook" onclick="borrowbookclk();"><i class="fa fa-angle-double-right"></i> Borrow Book</a></li>
+                <li><a class="haslink" href="#returnbook"onclick="returnbookclk();"><i class="fa fa-angle-double-right"></i> Return Book</a></li>        
+                <li><a class="haslink" href="#viewbookdetails" onclick="viewbookdetailsclk();"><i class="fa fa-angle-double-right"></i> View Book Details</a></li>
+                <li><a class="haslink" href="#duedates" onclick="duedatesclk();"><i class="fa fa-angle-double-right"></i> Due Dates</a></li>
             </ul>
         </li>
         <li class="treeview"><a href="#">
@@ -500,9 +500,9 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#addbookcategory"><i class="fa fa-angle-double-right"></i> Add Book Category</a></li>
-                <li><a class="haslink" href="#viewstudentdetails"><i class="fa fa-angle-double-right"></i> View Student Details</a></li>        
-                <li><a class="haslink" href="#viewauthors"><i class="fa fa-angle-double-right"></i> View Authors</a></li>
+                <li><a class="haslink" href="#addbookcategory" onclick="addbookcategoryclk();"><i class="fa fa-angle-double-right"></i> Add Book Category</a></li>
+                <li><a class="haslink" href="#viewstudentdetails" onclick="viewstudentdetailsclk();"><i class="fa fa-angle-double-right"></i> View Student Details</a></li>        
+                <li><a class="haslink" href="#viewauthors" onclick="viewauthorsclk();"><i class="fa fa-angle-double-right"></i> View Authors</a></li>
             </ul>
         </li>
         
@@ -529,8 +529,8 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#listallroute"><i class="fa fa-angle-double-right"></i> List All Route</a></li>
-                <li><a class="haslink" href="#assignroute"><i class="fa fa-angle-double-right"></i> Assign Route </a></li>
+                <li><a class="haslink" href="#listallroute" onclick="listallrouteclk();"><i class="fa fa-angle-double-right"></i> List All Route</a></li>
+                <li><a class="haslink" href="#assignroute" onclick="assignrouteclk();"><i class="fa fa-angle-double-right"></i> Assign Route </a></li>
             </ul>
         </li>
         <li class="treeview"><a href="#">
@@ -539,7 +539,7 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#allotment"><i class="fa fa-angle-double-right"></i> Allotment</a></li>
+                <li><a class="haslink" href="#allotment" onclick="allotmentclk();"><i class="fa fa-angle-double-right"></i> Allotment</a></li>
             </ul>
         </li>
         <li class="treeview"><a href="#">
@@ -548,10 +548,10 @@
         <i class="fa fa-angle-left pull-right"></i>
         </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#vehicledetails"><i class="fa fa-angle-double-right"></i> Vehicle Details</a></li>
-                <li><a class="haslink" href="#routedetails"><i class="fa fa-angle-double-right"></i>Route Details</a></li>        
-                <li><a class="haslink" href="#transportmanage"><i class="fa fa-angle-double-right"></i>Transport Manage</a></li>
-                <li><a class="haslink" href="#buslog"><i class="fa fa-angle-double-right"></i> Bus Log</a></li>
+                <li><a class="haslink" href="#vehicledetails" onclick="vehicledetailsclk();"><i class="fa fa-angle-double-right"></i> Vehicle Details</a></li>
+                <li><a class="haslink" href="#routedetails" onclick="routedetailsclk();"><i class="fa fa-angle-double-right"></i>Route Details</a></li>        
+                <li><a class="haslink" href="#transportmanage" onclick="transportmanageclk();"><i class="fa fa-angle-double-right"></i>Transport Manage</a></li>
+                <li><a class="haslink" href="#buslog" onclick="buslogclk();"><i class="fa fa-angle-double-right"></i> Bus Log</a></li>
             </ul>
         </li>
         
@@ -576,10 +576,10 @@
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#listroomdetails"><i class="fa fa-angle-double-right"></i> List Room Details</a></li>
-                <li><a class="haslink" href="#searchroom"><i class="fa fa-angle-double-right"></i> Search Room </a></li>
-                <li><a class="haslink" href="#hosteldetails"><i class="fa fa-angle-double-right"></i> Hostel Details </a></li>
-                <li><a class="haslink" href="#addroomdetails"><i class="fa fa-angle-double-right"></i>Add Room Details</a></li>
+                <li><a class="haslink" href="#listroomdetails" onclick="listroomdetailsclk();"><i class="fa fa-angle-double-right"></i> List Room Details</a></li>
+                <li><a class="haslink" href="#searchroom" onclick="searchroomclk();"><i class="fa fa-angle-double-right"></i> Search Room </a></li>
+                <li><a class="haslink" href="#hosteldetails" onclick="hosteldetailsclk();"><i class="fa fa-angle-double-right"></i> Hostel Details </a></li>
+                <li><a class="haslink" href="#addroomdetails" onclick="addroomdetailsclk();"><i class="fa fa-angle-double-right"></i>Add Room Details</a></li>
             </ul>
         </li>
         <li class="treeview">
@@ -588,8 +588,8 @@
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#allotrooms"><i class="fa fa-angle-double-right"></i> Allot Rooms</a></li>
-                <li><a class="haslink" href="#vacate"><i class="fa fa-angle-double-right"></i> Vacate</a></li>
+                <li><a class="haslink" href="#allotrooms" onclick="allotroomsclk();"><i class="fa fa-angle-double-right"></i> Allot Rooms</a></li>
+                <li><a class="haslink" href="#vacate" onclick="vacateclk();"><i class="fa fa-angle-double-right"></i> Vacate</a></li>
             </ul>
         </li>
         <li class="treeview">
@@ -598,7 +598,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#hostelviewstudent"><i class="fa fa-angle-double-right"></i>  View Student Details</a></li>
+                <li><a class="haslink" href="#hostelviewstudent" onclick="hostelviewstudentclk();"><i class="fa fa-angle-double-right"></i>  View Student Details</a></li>
             </ul>
         </li>
     </ul>
@@ -619,11 +619,11 @@
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#country"><i class="fa fa-angle-double-right"></i> Country</a></li>
-                <li><a class="haslink" href="#region"><i class="fa fa-angle-double-right"></i> Region</a></li>
-                <li><a class="haslink" href="#state"><i class="fa fa-angle-double-right"></i> State</a></li>
-                <li><a class="haslink" href="#city"><i class="fa fa-angle-double-right"></i> City</a></li>
-                <li><a class="haslink" href="#currency"><i class="fa fa-angle-double-right"></i> Currency</a></li>
+                <li><a class="haslink" href="#country" onclick="countryclk();"><i class="fa fa-angle-double-right"></i> Country</a></li>
+                <li><a class="haslink" href="#region" onclick="regionclk();"><i class="fa fa-angle-double-right"></i> Region</a></li>
+                <li><a class="haslink" href="#state" onclick="stateclk();"><i class="fa fa-angle-double-right"></i> State</a></li>
+                <li><a class="haslink" href="#city" onclick="cityclk();"><i class="fa fa-angle-double-right"></i> City</a></li>
+                <li><a class="haslink" href="#currency" onclick="currencyclk();"><i class="fa fa-angle-double-right"></i> Currency</a></li>
             </ul>
         </li>
         <li class="treeview">
@@ -632,13 +632,13 @@
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#department"><i class="fa fa-angle-double-right"></i> Department</a></li>
-                <li><a class="haslink" href="#schoolsetup"><i class="fa fa-angle-double-right"></i> School</a></li>
-                <li><a class="haslink" href="#orgnews"><i class="fa fa-angle-double-right"></i> Org.News</a></li>
-                <li><a class="haslink" href="#class"><i class="fa fa-angle-double-right"></i> Class</a></li>
-                <li><a class="haslink" href="#subject"><i class="fa fa-angle-double-right"></i> Subject</a></li>
-                <li><a class="haslink" href="#gradesection"><i class="fa fa-angle-double-right"></i> Grade Section</a></li>
-                <li><a class="haslink" href="#gradename"><i class="fa fa-angle-double-right"></i> Grade Name</a></li>
+                <li><a class="haslink" href="#department" onclick="departmentclk();"><i class="fa fa-angle-double-right"></i> Department</a></li>
+                <li><a class="haslink" href="#schoolsetup" onclick="schoolsetupclk();"><i class="fa fa-angle-double-right"></i> School</a></li>
+                <li><a class="haslink" href="#orgnews" onclick="orgnewsclk();"><i class="fa fa-angle-double-right"></i> Org.News</a></li>
+                <li><a class="haslink" href="#class" onclick="classclk();"><i class="fa fa-angle-double-right"></i> Class</a></li>
+                <li><a class="haslink" href="#subject" onclick="subjectclk();"><i class="fa fa-angle-double-right"></i> Subject</a></li>
+                <li><a class="haslink" href="#gradesection" onclick="gradesectionclk();"><i class="fa fa-angle-double-right"></i> Grade Section</a></li>
+                <li><a class="haslink" href="#gradename" onclick="gradenameclk();"><i class="fa fa-angle-double-right"></i> Grade Name</a></li>
             </ul>
         </li>
         <li class="treeview">
@@ -647,9 +647,9 @@
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#systemparameter"><i class="fa fa-angle-double-right"></i> System Parameter</a></li>
-                <li><a class="haslink" href="#customfields"><i class="fa fa-angle-double-right"></i> Custom Fields</a></li>
-                <li><a class="haslink" href="#logger"><i class="fa fa-angle-double-right"></i> Logger</a></li>
+                <li><a class="haslink" href="#systemparameter" onclick="systemparameterclk();"><i class="fa fa-angle-double-right"></i> System Parameter</a></li>
+                <li><a class="haslink" href="#customfields" onclick="customfieldsclk();"><i class="fa fa-angle-double-right"></i> Custom Fields</a></li>
+                <li><a class="haslink" href="#logger" onclick="loggerclk();"><i class="fa fa-angle-double-right"></i> Logger</a></li>
             </ul>
         </li>
         <li class="treeview">
@@ -658,8 +658,8 @@
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#userslist"><i class="fa fa-angle-double-right"></i> Users List</a></li>
-                <li><a class="haslink" href="#managerole"><i class="fa fa-angle-double-right"></i> Manage Role</a></li>   
+                <li><a class="haslink" href="#userslist"  onclick="userslistclk();"><i class="fa fa-angle-double-right"></i> Users List</a></li>
+                <li><a class="haslink" href="#managerole" onclick="manageroleclk();"><i class="fa fa-angle-double-right"></i> Manage Role</a></li>   
             </ul>
         </li>
         <li class="treeview">
@@ -668,7 +668,7 @@
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a class="haslink" href="#buildingandrooms"><i class="fa fa-angle-double-right"></i> Building and Rooms</a></li>
+                <li><a class="haslink" href="#buildingandrooms" onclick="buildingandroomsclk();"><i class="fa fa-angle-double-right"></i> Building and Rooms</a></li>
             </ul>
         </li>
         <li class="treeview">
@@ -677,10 +677,10 @@
                 <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
-                <li><a class="haslink"  href="#diseases"><i class="fa fa-angle-double-right"></i> Diseases</a></li>
-                <li><a class="haslink" href="#studentcategory"><i class="fa fa-angle-double-right"></i> Student Category</a></li>
-                <li><a class="haslink" href="#batches"><i class="fa fa-angle-double-right"></i> Batch</a></li>
-                <li><a class="haslink" href="#batchgroup"><i class="fa fa-angle-double-right"></i> Batch Group</a></li>
+                <li><a class="haslink"  href="#diseases" onclick="diseasesclk();"><i class="fa fa-angle-double-right"></i> Diseases</a></li>
+                <li><a class="haslink" href="#studentcategory" onclick="studentcategoryclk();"><i class="fa fa-angle-double-right"></i> Student Category</a></li>
+                <li><a class="haslink" href="#batches" onclick="batchesclk();"><i class="fa fa-angle-double-right"></i> Batch</a></li>
+                <li><a class="haslink" href="#batchgroup" onclick="batchgroupclk();"><i class="fa fa-angle-double-right"></i> Batch Group</a></li>
             </ul>
         </li>
     </ul>
@@ -1060,9 +1060,1197 @@ function complaintclk(){
 
 	});
 }
-       
-         
-        
+
+
+
+function generalsettingsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/setup",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+     
+function classclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/class",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+      
+function subjectclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/subject",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function gradesectionclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/gradesection",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});	
+}
+
+
+function batchclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/batches",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+function batchgroupclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/batchgroup",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+      
+function batchexamclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/batchexam",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function batchinternalscoreclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/batchinternalscore",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+   
+   
+function gradenameclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/gradename",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+
+function studentattendanceclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/studentattendance",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+
+function attendanceregister(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/attendanceregister",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function timetableclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/timetable",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function viewfulltimetableclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/viewfulltimetable",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function setclasstimingclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/setclasstiming",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function settimetableclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/settimetable",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function feesclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/fees",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function collectfeesclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/collectfees",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function paidclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/paid",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function unpaidclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/unpaid",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+function feesscheduleclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/feesschedule",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function feespaymentclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/feespayment",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function hostelfeesscheduleclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/hostelfeesschedule",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function hostelfeespaymentclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/hostelfeespayment",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+
+
+function applicant_reportclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/applicant_report",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function student_reportclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/student_report",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function gradesheetclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/gradesheet",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function reportcardclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/reportcard",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function semester_reportclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/semester_report",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function listbookclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/listbook",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function addbookclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/addbook",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function borrowbookclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/borrowbook",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function returnbookclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/returnbook",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function viewbookdetailsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/viewbookdetails",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function duedatesclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/duedates",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function addbookcategoryclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/addbookcategory",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+function viewstudentdetailsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/viewstudentdetails",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+function viewauthorsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/viewauthors",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function listallrouteclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/listallroute",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function assignrouteclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/assignroute",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function allotmentclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/allotment",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function vehicledetailsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/vehicledetails",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+function routedetailsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/routedetails",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+function transportmanageclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/transportmanage",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+function buslogclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/buslog",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function listroomdetailsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/listroomdetails",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function searchroomclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/searchroom",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function hosteldetailsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/hosteldetails",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function addroomdetailsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/addroomdetails",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function allotroomsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/allotrooms",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+
+function vacateclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/vacate",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+
+function hostelviewstudentclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/hostelviewstudent",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function countryclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/country",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function regionclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/region",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function stateclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/state",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function cityclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/city",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+function currencyclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/currency",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function systemparameterclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/systemparameter",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+function customfieldsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/customfields",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+function loggerclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/logger",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+
+function userslistclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/userslist",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function manageroleclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/managerole",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function buildingandroomsclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/buildingandrooms",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function diseasesclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/diseases",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+/* function studentcategoryclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/studentcategory",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function batchesclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/batches",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+}
+
+function batchgroupclk(){    	   
+	   
+	   alert('test--1');
+	   
+	$.ajax({
+		type : 'GET',
+		url : "/school/batchgroup",
+		data : {
+
+		},
+		success : function(result) {
+			$("#swap_wrap").html(result);
+
+		}
+
+	});
+} */
+
+      
         </script>
         
       

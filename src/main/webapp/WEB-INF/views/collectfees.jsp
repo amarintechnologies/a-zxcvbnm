@@ -1,0 +1,178 @@
+        <script type="text/javascript">
+           $('.chosen-select').chosen();
+        </script>
+                 <section class="content-header">
+                    <h1> Fees Collection </h1>
+		   <ol class="breadcrumb">
+                        <li><a href="home.html"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li><a href="feedashboard.html"><i class="fa"></i> Fees</a></li>
+                        <li><a href="#"><i class="fa"></i> Manage Fees</a></li>
+                        <li class="active"> Collect Fees</li>
+                    </ol>
+                </section>
+
+                <!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <div class="box col-md-12 col-xs-12">
+                <div class="box-header">
+                    <h3 class="box-title"> </h3>
+                </div>
+                <form role="form" class="col-md-12 ">
+                    <div class="col-md-3 ">
+                        <label>Class</label>
+                        <select class="form-control input-md chosen-select">
+                            <option>Search</option>
+                            <option>Class 001</option>
+                            <option>Class 002</option>
+                            <option>Class 003</option>
+                            <option>Class 004</option>
+                            <option>Class 005</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Collection </label>
+                        <select class="form-control input-md chosen-select">
+                            <!--<option>Select</option>-->
+                            <option>tuition Fees</option>
+                            <option>Exam Fees</option>
+                            <option>Hostel Fees</option>
+                            <option>Transport Fees</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">List of Fees Collection</h3>
+                </div>
+                <div class="box-body table-responsive">
+                    <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Ref.No</th>
+                                <th>Admission No</th>
+                                <th>Student Name</th>
+                                <th>Fees</th>
+                                <th>Fees Paid</th>
+                                <th>Balance</th>
+                                <th>Partial Payment</th>
+                                <th>Full Payment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2014ME006</td>
+                                <td>Siva</td>
+                                <td>Rs.10000</td>
+                                <td>Rs.2500</td>
+                                <td>Rs.7500</td>
+                                <td>
+                                    <a href="#" data-toggle="modal" data-target="#fees" class="btn btn-twitter fa fa-credit-card" title="Partial Amount Pay"></a>
+                                </td>
+                                <td>
+                                    <a href="#" onclick="alert('Payment successfully Done')" class="btn btn-success fa fa-money" title="Full Amount Pay"></a>
+                                </td>
+                                <!--<td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default">Select</button>
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#" onclick="alert('Payment successfully Done')">Full Amount</a></li>
+                                            <li><a data-toggle="modal" data-target="#fee">Partial Amount</a></li>
+                                        </ul>
+                                    </div>
+                                </td>-->
+                            </tr>
+                                           
+                                           <tr>
+                                                <td>5</td>
+                                                <td>2013BE006</td>
+                                                <td>Ragu</td>
+                                                <td>Rs.5000</td>
+                                                <td>Rs.2000</td>
+                                                <td>Rs.3000</td>
+                                                <td>
+                                                    <a href="#" data-toggle="modal" data-target="#fees" class="btn btn-twitter fa fa-credit-card" title="Partial Amount Pay"></a>
+                                                </td>
+                                                <td>
+                                                    <a href="#" onclick="alert('Payment successfully Done')" class="btn btn-success fa fa-money" title="Full Amount Pay"></a>
+                                                </td>
+                                            </tr>
+                                           
+                                        </tbody>
+                                        
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        
+                        </div>
+                    </div><!-- /.row (main row) -->
+
+             </section><!-- /.content -->
+
+
+ <!-- add new calendar event modal -->
+<div class="modal fade" id="fees" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"> Fees Collection </h4>
+                </div>
+                <form action="#" method="post">
+                    <div class="modal-body">
+                        <div class=" ">
+                            <div class="form-group">
+                                 <label>Name:</label>
+                                 <input class="form-control input-md" type="text" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                 <label>Admission No:</label>
+                                 <input class="form-control input-md" type="text" placeholder="Admission No">
+                            </div>
+                            <div class="form-group">
+                                 <label>Fees:</label>
+                                 <input class="form-control input-md" type="text" placeholder="Fees">
+                            </div>
+                       
+                            <div class="form-group">
+                                 <label>Fees Paid:</label>
+                                 <input class="form-control input-md" type="text" placeholder="Fees Paid">
+                            </div>
+                            <div class="form-group">
+                                 <label>Balance To Pay:</label>
+                                 <input class="form-control input-md" type="text" placeholder="">
+                            </div>
+                            <div class="form-group">
+                                <label>Amount Paid:</label>
+                                <input class="form-control input-md" type="text" placeholder="">
+                            </div>
+                            
+                            
+                        </div>
+                        
+                        
+                        <div class="modal-footer clearfix">
+                            <button type="button" class="btn btn-danger"  data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-save"></i> Save</button>
+                        </div>
+                        </div>
+                    </form>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
